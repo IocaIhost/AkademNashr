@@ -1,25 +1,47 @@
+* {
+    box-sizing: border-box;
+}
 
 body{
+    padding: 0;
+    margin: 0;
     font-size: 16px;
     line-height: 1.5;
     font-family: "Roboto", "Arial", sans-serif;
     letter-spacing: 0.5;
 }
+
 *:focus{
     outline: 2px dotted #FF7500;
     outline-offset: 3px;
 }
 
+/* CONTAINER */
+.container{
+    width: 100%;
+    max-width: 1160px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
 /* SITE HEADER */
 .site-header{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 5px solid #FF7500;
     background-color: white;
+}
+
+
+.site-header-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 5px solid #FF7500;
-    padding-top: 16px;
-    padding-bottom: 16px;
 }
+
 .logo-link{
     transition: opacity 0.4s ease;
 }
@@ -106,6 +128,9 @@ sitenav-link:active{
     padding-bottom: 80px;
     background-color: #252420;
     color: #fff;
+}
+
+.hero-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -141,6 +166,7 @@ sitenav-link:active{
     width: 510px;
     height: 510px;
     border-radius: 8px;
+    box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6);
 }
 
 
@@ -182,6 +208,7 @@ sitenav-link:active{
     align-items:center;
     width: 100px;
     height: 100px;
+    margin-bottom: 32px;
     background-color: rgba(255, 117, 0, 0.2);
     border-radius: 50%;
 }
@@ -189,17 +216,29 @@ sitenav-link:active{
 .feature-title{
     font-size: 24px;
     line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 12px;
     font-family: 'Rooboto Condensed', "Roboto", 'Arial', sans-serif;
+}
+
+.feature-info{
+    margin: 0;
 }
 
 /* PROMO */
 .promo{
-    border-radius: 12px;
-    background-color: #252420;
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+
+.promo-inner{
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 64px;
+    border-radius: 12px;
+    background-color: #252420;
 }
 
 .promo-content{
@@ -236,6 +275,8 @@ sitenav-link:active{
     width: 440px;
     height: 440px;
     object-fit: cover;
+    border-radius: 11px;
+
 }
 
 /* SITE FOOTER */
@@ -312,6 +353,14 @@ sitenav-link:active{
     margin-right: 0;
 }
 
+.site-footer-links li{
+    margin-bottom: 16px;
+}
+
+
+.site-footer-links li:last-child{
+    margin-bottom: 0;
+}
 
 .site-footer-links a{
     text-decoration: none;
