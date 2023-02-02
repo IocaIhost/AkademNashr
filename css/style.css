@@ -149,6 +149,7 @@ sitenav-link:active{
 }
 
 .hero-container{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -181,6 +182,9 @@ sitenav-link:active{
 }
 
 .hero-img{
+    position: absolute;
+    right: 20px;
+    top: -40px;
     width: 510px;
     height: 510px;
     border-radius: 8px;
@@ -251,6 +255,7 @@ sitenav-link:active{
 }
 
 .promo-inner{
+    position: relative;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -291,6 +296,9 @@ sitenav-link:active{
 }
 
 .promo-img{
+    position: absolute;
+    right: 64px;
+    bottom: 64px;
     width: 440px;
     height: 440px;
     object-fit: cover;
